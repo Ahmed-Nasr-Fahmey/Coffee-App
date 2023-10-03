@@ -1,5 +1,10 @@
+<<<<<<< Updated upstream
 import 'package:coffee_app/Features/Onboarding/OnboardingView1/onboarding_view_1.dart';
 import 'package:coffee_app/Features/Onboarding/OnboardingView2/onboarding_view_2.dart';
+=======
+import 'package:coffee_app/Features/Onboarding/LogIn/login_view.dart';
+import 'package:coffee_app/Features/Onboarding/PhoneVerification/phone_verification.dart';
+>>>>>>> Stashed changes
 import 'package:flutter/material.dart';
 
 import '../../Features/Onboarding/Splash/splash_view.dart';
@@ -12,6 +17,7 @@ class Routes {
           builder: (context) => const SplashView(),
           settings: settings,
         );
+<<<<<<< Updated upstream
       case OnboardingView1.routeName:
         return MaterialPageRoute(
           builder: (context) => const OnboardingView1(),
@@ -22,6 +28,18 @@ class Routes {
           builder: (context) => const OnboardingView2(),
           settings: settings,
         );  
+=======
+        case LogInView.routeName:
+        return MaterialPageRoute(
+          builder: (context) => const LogInView(),
+          settings: settings,
+        );
+        case PhoneVerification.routeName:
+        return MaterialPageRoute(
+          builder: (context) => const PhoneVerification(),
+          settings: settings,
+        );
+>>>>>>> Stashed changes
       default:
         return MaterialPageRoute(
           builder: (context) => const SplashView(),
