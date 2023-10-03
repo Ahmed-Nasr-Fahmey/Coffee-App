@@ -1,4 +1,4 @@
-import 'package:coffee_app/Features/Onboarding/LogIn/login_view.dart';
+import 'package:coffee_app/Features/Onboarding/Splash/splash_view.dart';
 import 'package:flutter/material.dart';
 
 import 'Core/Constants/colors_const.dart';
@@ -16,7 +16,7 @@ class CoffeeApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: LogInView.routeName,
+      initialRoute: SplashView.routeName,
       onGenerateRoute: Routes.generateRoute,
       theme: ThemeData(
         scaffoldBackgroundColor: ConstColors.backgroundColor,

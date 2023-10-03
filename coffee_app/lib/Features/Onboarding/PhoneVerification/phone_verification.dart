@@ -40,7 +40,7 @@ class _PhoneVerificationState extends State<PhoneVerification> {
                     },
                     child: const Icon(
                       Icons.arrow_back_ios,
-                      color: ConstColors.primarycolor,
+                      color: ConstColors.primaryColor,
                     ),
                   ),
                 ),
@@ -52,7 +52,7 @@ class _PhoneVerificationState extends State<PhoneVerification> {
                     style: GoogleFonts.nunito(
                         fontSize: 16,
                         fontWeight: FontWeight.bold,
-                        color: ConstColors.primarycolor)),
+                        color: ConstColors.primaryColor)),
               ],
             ),
             const SizedBox(
@@ -77,7 +77,7 @@ class _PhoneVerificationState extends State<PhoneVerification> {
                 style: GoogleFonts.nunito(
                     fontSize: 14,
                     fontWeight: FontWeight.w400,
-                    color: ConstColors.primarycolor)),
+                    color: ConstColors.primaryColor)),
             const SizedBox(
               height: 14,
             ),
@@ -129,7 +129,7 @@ class _PhoneVerificationState extends State<PhoneVerification> {
                       style: GoogleFonts.nunito(
                         fontSize: 10,
                         fontWeight: FontWeight.w800,
-                        color: ConstColors.primarycolor,
+                        color: ConstColors.primaryColor,
                       )),
                 ],
               ),

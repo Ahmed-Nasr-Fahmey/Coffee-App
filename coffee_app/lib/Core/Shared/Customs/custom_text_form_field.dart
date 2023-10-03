@@ -24,29 +24,29 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
         
         onChanged: widget.onChanged,
         style: GoogleFonts.montserrat(
-          color: ConstColors.primarycolor,
+          color: ConstColors.primaryColor,
           fontSize: 14,
           fontWeight: FontWeight.w500,
           letterSpacing: 0.12,
         ),
-        cursorColor: ConstColors.primarycolor,
+        cursorColor: ConstColors.primaryColor,
         decoration: const InputDecoration(
           
           enabledBorder: OutlineInputBorder(
             borderSide: BorderSide(
               width: 1,
-              color: ConstColors.primarycolor,
+              color: ConstColors.primaryColor,
             ),
           ),
           focusedBorder: OutlineInputBorder(
             borderSide: BorderSide(
-              color: ConstColors.primarycolor,
+              color: ConstColors.primaryColor,
               width: 1,
             ),
           ),
           border: OutlineInputBorder(
             borderSide: BorderSide(
-              color: ConstColors.primarycolor,
+              color: ConstColors.primaryColor,
               width: 1,
             ),
           ),

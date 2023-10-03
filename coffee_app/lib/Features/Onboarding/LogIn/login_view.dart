@@ -9,7 +9,6 @@ class LogInView extends StatefulWidget {
   const LogInView({super.key});
   static const String routeName = "LogInView";
 
-  static const String routeName = 'LogInView';
   @override
   State<LogInView> createState() => _LogInViewState();
 }

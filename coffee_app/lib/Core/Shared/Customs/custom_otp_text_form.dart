@@ -28,12 +28,12 @@ class CustomOtpTextFormField extends StatelessWidget {
         onSaved: onSaved,
         textAlign: TextAlign.center,
         style: const TextStyle(
-          color: ConstColors.primarycolor,
+          color: ConstColors.primaryColor,
 
           fontSize: 24,
         ),
         keyboardType: TextInputType.number,
-        cursorColor: ConstColors.primarycolor,
+        cursorColor: ConstColors.primaryColor,
         inputFormatters: [LengthLimitingTextInputFormatter(1)],
         decoration: InputDecoration(
           errorStyle: const TextStyle(
@@ -41,26 +41,26 @@ class CustomOtpTextFormField extends StatelessWidget {
           ),
           hintText: '__',
           hintStyle: TextStyle(
-            color: ConstColors.primarycolor.withOpacity(0.3),
+            color: ConstColors.primaryColor.withOpacity(0.3),
           ),
           filled: true,
-          fillColor: ConstColors.primarycolor.withOpacity(0.05),
+          fillColor: ConstColors.primaryColor.withOpacity(0.05),
           focusedBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(15),
             borderSide: const BorderSide(
-              color: ConstColors.primarycolor,
+              color: ConstColors.primaryColor,
             ),
           ),
           enabledBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(15),
             borderSide: BorderSide(
-              color: ConstColors.primarycolor.withOpacity(0.3),
+              color: ConstColors.primaryColor.withOpacity(0.3),
             ),
           ),
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(15),
             borderSide: const BorderSide(
-              color: ConstColors.primarycolor,
+              color: ConstColors.primaryColor,
             ),
           ),
         ),
