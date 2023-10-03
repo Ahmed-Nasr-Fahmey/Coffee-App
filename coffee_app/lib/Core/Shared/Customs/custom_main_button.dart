@@ -18,7 +18,7 @@ class CustomMainButton extends StatelessWidget {
         width: double.infinity,
         height: 56,
         decoration: const BoxDecoration(
-            color: ConstColors.primarycolor,
+            color: ConstColors.primaryColor,
             borderRadius: BorderRadius.all(Radius.circular(32))),
         child: Center(
           child: Text(

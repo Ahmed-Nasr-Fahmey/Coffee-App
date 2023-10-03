@@ -6,7 +6,6 @@ import 'Features/Onboarding/Splash/splash_view.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-
   runApp(const CoffeeApp());
 }
 
