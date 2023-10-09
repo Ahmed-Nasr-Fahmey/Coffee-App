@@ -1,6 +1,7 @@
 import 'package:coffee_app/Core/Constants/colors_const.dart';
 import 'package:coffee_app/Core/Constants/images_const.dart';
 import 'package:coffee_app/Core/Shared/widgets/indicator.dart';
+import 'package:coffee_app/Features/Onboarding/LogIn/login_view.dart';
 import 'package:coffee_app/Features/Onboarding/OnboardingView2/onboarding_view_2.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -27,7 +28,9 @@ class OnboardingView1 extends StatelessWidget {
                     borderRadius: BorderRadius.circular(50),
                   ),
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushNamed(context, LogInView.routeName);
+                },
                 child: Text(
                   'SKIP',
                   style: GoogleFonts.nunito(

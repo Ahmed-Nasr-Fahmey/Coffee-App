@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../../Constants/colors_const.dart';
+
 class AddedToCartAlert extends StatelessWidget {
   const AddedToCartAlert({super.key});
 
@@ -32,15 +33,17 @@ class AddedToCartAlert extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisSize: MainAxisSize.min,
               children: [
-                Padding(
-                  padding: const EdgeInsets.only(bottom: 50, top: 16),
-                  child: Icon(Icons.check_circle_outlined,size: 40,color: Color(0xFF055326),)
-                ),
-                
+                const Padding(
+                    padding: EdgeInsets.only(bottom: 50, top: 16),
+                    child: Icon(
+                      Icons.check_circle_outlined,
+                      size: 40,
+                      color: Color(0xFF055326),
+                    )),
                 const SizedBox(
                   height: 20,
                 ),
-               Text(
+                Text(
                   "Item has been added to Cart",
                   style: GoogleFonts.nunito(
                     fontSize: 16,
@@ -48,7 +51,6 @@ class AddedToCartAlert extends StatelessWidget {
                     color: const Color(0xFF373E43),
                   ),
                 ),
-
                 const SizedBox(
                   height: 37,
                 ),
@@ -63,6 +65,7 @@ class AddedToCartAlert extends StatelessWidget {
                         ),
                       ),
                       onPressed: () {
+                        Navigator.pop(context);
                         Navigator.pushNamed(context, HomeView.routeName);
                       },
                       child: SizedBox(
@@ -83,16 +86,20 @@ class AddedToCartAlert extends StatelessWidget {
                       ),
                     ),
                   ],
-                )
-       , const SizedBox(
+                ),
+                const SizedBox(
                   height: 8,
-                )
-               , Row(
+                ),
+                Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Container(decoration: BoxDecoration(borderRadius: BorderRadius.circular(50),border: Border.all(color: ConstColors.primaryColor,)),
+                    Container(
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(50),
+                          border: Border.all(
+                            color: ConstColors.primaryColor,
+                          )),
                       child: ElevatedButton(
-                        
                         style: ElevatedButton.styleFrom(
                           backgroundColor: ConstColors.backgroundColor,
                           shape: RoundedRectangleBorder(
@@ -100,9 +107,9 @@ class AddedToCartAlert extends StatelessWidget {
                           ),
                         ),
                         onPressed: () {
-
+                          Navigator.pop(context);
                           Navigator.pushNamed(context, CartView.routeName);
-                                                },
+                        },
                         child: SizedBox(
                           height: 45,
                           width: 160,
@@ -123,7 +130,6 @@ class AddedToCartAlert extends StatelessWidget {
                     ),
                   ],
                 )
-        
               ],
             ),
           ),
@@ -132,4 +138,3 @@ class AddedToCartAlert extends StatelessWidget {
     );
   }
 }
-  

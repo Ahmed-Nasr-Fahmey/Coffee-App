@@ -1,5 +1,5 @@
 import 'package:coffee_app/Core/Constants/colors_const.dart';
-import 'package:coffee_app/Core/Shared/Customs/custom_app_bar.dart';
+import 'package:coffee_app/Core/Constants/images_const.dart';
 import 'package:coffee_app/Core/Shared/Customs/custom_main_button.dart';
 import 'package:coffee_app/Core/Shared/Customs/custom_otp_text_form.dart';
 import 'package:coffee_app/Core/Shared/Functions/functions.dart';
@@ -28,7 +28,36 @@ class _PhoneVerificationState extends State<PhoneVerification> {
         body: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-          const  CustomAppBar(title: "Verify your mobile number"),
+            const SizedBox(
+              height: 60,
+            ),
+            Row(
+              children: [
+                Padding(
+                  padding: const EdgeInsets.only(left: 20),
+                  child: GestureDetector(
+                    onTap: () {
+                      Navigator.pop(context);
+                    },
+                    child: const Icon(
+                      Icons.arrow_back_ios,
+                      color: ConstColors.primaryColor,
+                    ),
+                  ),
+                ),
+                const SizedBox(
+                  width: 40,
+                ),
+                Text(
+                  "Verify your mobile number",
+                  textAlign: TextAlign.center,
+                  style: GoogleFonts.nunito(
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                      color: ConstColors.primaryColor),
+                ),
+              ],
+            ),
             const SizedBox(
               height: 40,
             ),
@@ -37,7 +66,7 @@ class _PhoneVerificationState extends State<PhoneVerification> {
               child: Padding(
                 padding: const EdgeInsets.only(left: 24),
                 child: Image.asset(
-                  "Assets/images/Phone.png",
+                  ConstImages.phoneImage,
                   width: 105,
                   height: 110,
                 ),
@@ -100,12 +129,14 @@ class _PhoneVerificationState extends State<PhoneVerification> {
                         fontWeight: FontWeight.w400,
                         color: Colors.black,
                       )),
-                  Text("Resend Code",
-                      style: GoogleFonts.nunito(
-                        fontSize: 10,
-                        fontWeight: FontWeight.w800,
-                        color: ConstColors.primaryColor,
-                      )),
+                  Text(
+                    "Resend Code",
+                    style: GoogleFonts.nunito(
+                      fontSize: 10,
+                      fontWeight: FontWeight.w800,
+                      color: ConstColors.primaryColor,
+                    ),
+                  ),
                 ],
               ),
             ),

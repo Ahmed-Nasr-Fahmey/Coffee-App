@@ -30,16 +30,10 @@ environment:
 dependencies:
   animated_splash_screen: ^1.3.0
   cupertino_icons: ^1.0.2
+  font_awesome_flutter: ^10.5.0
+  google_nav_bar: ^5.0.6
   flutter:
     sdk: flutter
-<<<<<<< Updated upstream
-=======
-
-
-  # The following adds the Cupertino Icons font to your application.
-  # Use with the CupertinoIcons class for iOS style icons.
-  cupertino_icons: ^1.0.2
->>>>>>> Stashed changes
   google_fonts: ^6.1.0
 
 dev_dependencies:
@@ -63,15 +57,18 @@ flutter:
   uses-material-design: true
   # To add assets to your application, add an assets section, like this:
   assets:
-<<<<<<< Updated upstream
     - Assets/
     - Assets/images/onboardingImage.png
     - Assets/images/onboarding2Image.png
-  #   - images/a_dot_ham.jpeg
-=======
-    - assets/Login.png
-    - assets/Phone.png
->>>>>>> Stashed changes
+    - Assets/images/Login.png
+    - Assets/images/Cart.png
+    - Assets/images/coffeCup.png
+    - Assets/images/instagram.png
+    - Assets/images/OrderConfirmation.png
+    - Assets/images/OrderHistory1.png
+    - Assets/images/Phone.png
+    - Assets/images/twitter-fill.png
+    - Assets/images/whatsapp-icon.png
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
   # For details regarding adding assets from package dependencies, see

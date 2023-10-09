@@ -20,15 +20,15 @@ class _CartChoicesState extends State<CartChoices> {
       children: milkChoices.map((String choice) {
         final index = milkChoices.indexOf(choice);
         return Container(
-          padding: EdgeInsets.all(0), // Remove all padding
+          padding: const EdgeInsets.all(0), // Remove all padding
           child: ListTile(
             contentPadding: EdgeInsets.zero, // Remove padding around ListTile content
             title: Row(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 Text(choice),
-                Spacer(),
-                Text("\$0.57"),
+                const Spacer(),
+                const Text("\$0.57"),
               ],
             ),
             leading: Radio<int>(

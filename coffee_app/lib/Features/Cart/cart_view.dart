@@ -1,6 +1,7 @@
 import 'package:coffee_app/Core/Shared/Customs/custom_app_bar.dart';
 import 'package:coffee_app/Core/Shared/Customs/custom_card.dart';
 import 'package:coffee_app/Core/Shared/Customs/custom_main_button.dart';
+import 'package:coffee_app/Features/OrderConfirmation/order_confirmation.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -42,83 +43,87 @@ class CartView extends StatelessWidget {
             const SizedBox(
               height: 24,
             ),
-        
-        Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 24),
-          child: Column(
-            children: [
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 24),
+              child: Column(
+                children: [
                   Row(
-                children: [
-                  Text(
-                    'Subtotal',
-                    style: GoogleFonts.nunito(
-                      color: Color(0xFF373E43),
-                      fontSize: 12,
-                      fontWeight: FontWeight.w700,
-                    ),
+                    children: [
+                      Text(
+                        'Subtotal',
+                        style: GoogleFonts.nunito(
+                          color: const Color(0xFF373E43),
+                          fontSize: 12,
+                          fontWeight: FontWeight.w700,
+                        ),
+                      ),
+                      const Spacer(),
+                      Text(
+                        '\$10.5',
+                        style: GoogleFonts.nunito(
+                          color: const Color(0xFF373E43),
+                          fontSize: 12,
+                          fontWeight: FontWeight.w700,
+                        ),
+                      ),
+                    ],
                   ),
-                  Spacer(),
-                  Text(
-                    '\$10.5',
-                    style: GoogleFonts.nunito(
-                      color: Color(0xFF373E43),
-                      fontSize: 12,
-                      fontWeight: FontWeight.w700,
-                    ),
+                  Row(
+                    children: [
+                      Text(
+                        'Delivery fxee',
+                        style: GoogleFonts.nunito(
+                          color: const Color(0xFF373E43),
+                          fontSize: 12,
+                          fontWeight: FontWeight.w700,
+                        ),
+                      ),
+                      const Spacer(),
+                      Text(
+                        '\$1.05',
+                        style: GoogleFonts.nunito(
+                          color: const Color(0xFF373E43),
+                          fontSize: 12,
+                          fontWeight: FontWeight.w700,
+                        ),
+                      ),
+                    ],
                   ),
-                ],
-              ), Row(
-                children: [
-                  Text(
-                    'Delivery fxee',
-                    style: GoogleFonts.nunito(
-                      color: Color(0xFF373E43),
-                      fontSize: 12,
-                      fontWeight: FontWeight.w700,
-                    ),
-                  ),
-                  Spacer(),
-                  Text(
-                    '\$1.05',
-                    style: GoogleFonts.nunito(
-                      color: Color(0xFF373E43),
-                      fontSize: 12,
-                      fontWeight: FontWeight.w700,
-                    ),
-                  ),
-                ],
-              ), Row(
-                children: [
-                  Text(
-                    'Total',
-                    style: GoogleFonts.nunito(
-                      color: Color(0xFF373E43),
-                      fontSize: 12,
-                      fontWeight: FontWeight.w700,
-                    ),
-                  ),
-                  Spacer(),
-                  Text(
-                    '\$11.55',
-                    style: GoogleFonts.nunito(
-                      color: Color(0xFF373E43),
-                      fontSize: 12,
-                      fontWeight: FontWeight.w700,
-                    ),
+                  Row(
+                    children: [
+                      Text(
+                        'Total',
+                        style: GoogleFonts.nunito(
+                          color: const Color(0xFF373E43),
+                          fontSize: 12,
+                          fontWeight: FontWeight.w700,
+                        ),
+                      ),
+                      const Spacer(),
+                      Text(
+                        '\$11.55',
+                        style: GoogleFonts.nunito(
+                          color: const Color(0xFF373E43),
+                          fontSize: 12,
+                          fontWeight: FontWeight.w700,
+                        ),
+                      ),
+                    ],
                   ),
                 ],
               ),
-             
-            ],
-          ),
-        )
-        
-        
-      ,const SizedBox(height: 40,)
-      ,
-         Padding(
+            ),
+            const SizedBox(
+              height: 40,
+            ),
+            Padding(
               padding: const EdgeInsets.symmetric(horizontal: 24),
-              child: CustomMainButton(text: "Check out", onTap: () {}),
+              child: CustomMainButton(
+                  text: "Check out",
+                  onTap: () {
+                    
+                    Navigator.pushNamed(context, OrderConfirmation.routeName);
+                  }),
             )
           ],
         ),

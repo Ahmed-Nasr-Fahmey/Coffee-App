@@ -146,7 +146,7 @@ class _CustomCardState extends State<CustomCard> {
                     ),
                   ),
                   const Spacer(),
-                  widget.cartView? Icon(FontAwesomeIcons.trashCan,color: ConstColors.primaryColor,):CustomMainButton(
+                  widget.cartView? const Icon(FontAwesomeIcons.trashCan,color: ConstColors.primaryColor,):CustomMainButton(
                       height: 30,
                       text: "Reorder",
                       width: 100,

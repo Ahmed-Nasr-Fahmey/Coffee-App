@@ -17,8 +17,7 @@ class Indicator extends StatelessWidget {
       width: isActive ? 28 : 12,
       height: 8,
       decoration: BoxDecoration(
-        color:
-            isActive ? ConstColors.primaryColor : ConstColors.backgroundColor,
+        color: isActive ? ConstColors.primaryColor : ConstColors.greyColor,
         borderRadius: BorderRadius.circular(8),
       ),
     );

@@ -1,6 +1,6 @@
 import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:coffee_app/Core/Constants/colors_const.dart';
-import 'package:coffee_app/Features/Cart/cart_view.dart';
+import 'package:coffee_app/Features/Onboarding/OnboardingView1/onboarding_view_1.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -20,7 +20,7 @@ class SplashView extends StatelessWidget {
             fontWeight: FontWeight.w800,
           ),
         ),
-        nextScreen: const CartView(),
+        nextScreen: const OnboardingView1(),
         splashTransition: SplashTransition.fadeTransition,
         backgroundColor: ConstColors.primaryColor,
       ),

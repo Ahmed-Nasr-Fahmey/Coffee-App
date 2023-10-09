@@ -1,3 +1,4 @@
+import 'package:coffee_app/Core/Constants/images_const.dart';
 import 'package:coffee_app/Core/Shared/Customs/custom_main_button.dart';
 import 'package:coffee_app/Core/Shared/Customs/custom_text_form_field.dart';
 import 'package:coffee_app/Core/Shared/Functions/functions.dart';
@@ -29,11 +30,12 @@ class _LogInViewState extends State<LogInView> {
                 height: 100,
               ),
               Center(
-                  child: Image.asset(
-                " Assets/images/Login.png",
-                width: 120,
-                height: 120,
-              )),
+                child: Image.asset(
+                  ConstImages.loginImage,
+                  width: 120,
+                  height: 120,
+                ),
+              ),
               Padding(
                 padding: const EdgeInsets.only(top: 12, bottom: 6),
                 child: Text("Enter your phone number",
@@ -54,7 +56,6 @@ class _LogInViewState extends State<LogInView> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   CustomTextFormField(
-                    
                       mywidth: 60,
                       validator: (value) {
                         if (value!.isNotEmpty) {
