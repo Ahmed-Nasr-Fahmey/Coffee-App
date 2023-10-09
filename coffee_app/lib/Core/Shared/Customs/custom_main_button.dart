@@ -6,27 +6,37 @@ class CustomMainButton extends StatelessWidget {
   const CustomMainButton({
     super.key,
     required this.text,
-    required this.onTap,
+    required this.onTap,  this.width=double.infinity,this.radius=40,  this.height=56,  this.fontSize=16,  this.backgroundColor=ConstColors.primaryColor,
+    this.textColor=ConstColors.backgroundColor
+    
   });
   final String? text;
   final VoidCallback? onTap;
+  final double width;
+   final double height;
+  final double radius;
+  final double fontSize;
+  final Color backgroundColor;
+    final Color textColor;
+
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: onTap,
       child: Container(
-        width: double.infinity,
-        height: 56,
-        decoration: const BoxDecoration(
-            color: ConstColors.primaryColor,
-            borderRadius: BorderRadius.all(Radius.circular(32))),
+        width: width,
+        height: height,
+        decoration:  BoxDecoration(
+          border: Border.all(color: ConstColors.primaryColor),
+            color: backgroundColor,
+            borderRadius: BorderRadius.all(Radius.circular(radius))),
         child: Center(
           child: Text(
             "$text",
             style: GoogleFonts.montserrat(
-              textStyle: const TextStyle(
-                fontSize: 16,
-                color: ConstColors.backgroundColor,
+              textStyle:  TextStyle(
+                fontSize: fontSize,
+                color: textColor,
                 fontWeight: FontWeight.w600,
               ),
             ),

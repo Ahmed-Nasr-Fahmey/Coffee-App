@@ -6,11 +6,13 @@ class CustomTextFormField extends StatefulWidget {
   CustomTextFormField({
     super.key,
     required this.validator,
-    this.onChanged, required this.mywidth,
+    this.onChanged, required this.mywidth,  this.maxLines=1, this.autovalidateMode,
   });
   String? Function(String?)? validator;
   final Function(String)? onChanged;
   double? mywidth;
+  final int maxLines;
+  final dynamic autovalidateMode;
   @override
   State<CustomTextFormField> createState() => _CustomTextFormFieldState();
 }
@@ -21,8 +23,9 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
     return SizedBox(
       width: widget.mywidth,
       child: TextFormField(
-        
+        maxLines: widget.maxLines,
         onChanged: widget.onChanged,
+        autovalidateMode: widget.autovalidateMode,
         style: GoogleFonts.montserrat(
           color: ConstColors.primaryColor,
           fontSize: 14,

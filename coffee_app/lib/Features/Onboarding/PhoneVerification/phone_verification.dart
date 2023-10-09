@@ -1,4 +1,5 @@
 import 'package:coffee_app/Core/Constants/colors_const.dart';
+import 'package:coffee_app/Core/Shared/Customs/custom_app_bar.dart';
 import 'package:coffee_app/Core/Shared/Customs/custom_main_button.dart';
 import 'package:coffee_app/Core/Shared/Customs/custom_otp_text_form.dart';
 import 'package:coffee_app/Core/Shared/Functions/functions.dart';
@@ -27,34 +28,7 @@ class _PhoneVerificationState extends State<PhoneVerification> {
         body: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            const SizedBox(
-              height: 60,
-            ),
-            Row(
-              children: [
-                Padding(
-                  padding: const EdgeInsets.only(left: 20),
-                  child: GestureDetector(
-                    onTap: () {
-                      Navigator.pop(context);
-                    },
-                    child: const Icon(
-                      Icons.arrow_back_ios,
-                      color: ConstColors.primaryColor,
-                    ),
-                  ),
-                ),
-                const SizedBox(
-                  width: 40,
-                ),
-                Text("Verify your mobile number",
-                    textAlign: TextAlign.center,
-                    style: GoogleFonts.nunito(
-                        fontSize: 16,
-                        fontWeight: FontWeight.bold,
-                        color: ConstColors.primaryColor)),
-              ],
-            ),
+          const  CustomAppBar(title: "Verify your mobile number"),
             const SizedBox(
               height: 40,
             ),
@@ -63,7 +37,7 @@ class _PhoneVerificationState extends State<PhoneVerification> {
               child: Padding(
                 padding: const EdgeInsets.only(left: 24),
                 child: Image.asset(
-                  "assets/Phone.png",
+                  "Assets/images/Phone.png",
                   width: 105,
                   height: 110,
                 ),
@@ -83,7 +57,8 @@ class _PhoneVerificationState extends State<PhoneVerification> {
             ),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 24),
-              child: Row(mainAxisAlignment: MainAxisAlignment.center,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   CustomOtpTextFormField(
                     onSaved: (p0) {
@@ -139,9 +114,11 @@ class _PhoneVerificationState extends State<PhoneVerification> {
             ),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 24),
-              child: CustomMainButton(text: "Continue", onTap: () {
-               Navigator.pushNamed(context, HomeView.routeName);
-              }),
+              child: CustomMainButton(
+                  text: "Continue",
+                  onTap: () {
+                    Navigator.pushNamed(context, HomeView.routeName);
+                  }),
             )
           ],
         ),

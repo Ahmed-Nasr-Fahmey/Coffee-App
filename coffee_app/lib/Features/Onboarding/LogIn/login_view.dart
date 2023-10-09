@@ -30,7 +30,7 @@ class _LogInViewState extends State<LogInView> {
               ),
               Center(
                   child: Image.asset(
-                "assets/Login.png",
+                " Assets/images/Login.png",
                 width: 120,
                 height: 120,
               )),
