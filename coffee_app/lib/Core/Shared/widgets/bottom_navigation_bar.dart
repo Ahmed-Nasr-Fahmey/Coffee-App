@@ -2,7 +2,7 @@ import 'package:coffee_app/Core/Constants/colors_const.dart';
 import 'package:coffee_app/Features/Cart/cart_view.dart';
 import 'package:coffee_app/Features/Favourites/favourites.dart';
 import 'package:coffee_app/Features/Home/home_view.dart';
-import 'package:coffee_app/Features/ProfileView/profile_view.dart';
+import 'package:coffee_app/Features/Profile/ProfileView/profile_view.dart';
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 

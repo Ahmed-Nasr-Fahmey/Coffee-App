@@ -3,7 +3,7 @@ import 'package:coffee_app/Core/Constants/images_const.dart';
 import 'package:coffee_app/Core/Shared/Customs/custom_main_button.dart';
 import 'package:coffee_app/Core/Shared/Customs/custom_otp_text_form.dart';
 import 'package:coffee_app/Core/Shared/Functions/functions.dart';
-import 'package:coffee_app/Features/Home/home_view.dart';
+import 'package:coffee_app/Core/Shared/widgets/bottom_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -148,7 +148,7 @@ class _PhoneVerificationState extends State<PhoneVerification> {
               child: CustomMainButton(
                   text: "Continue",
                   onTap: () {
-                    Navigator.pushNamed(context, HomeView.routeName);
+                    Navigator.pushNamed(context, CustomBottomNavigationBar.routeName);
                   }),
             )
           ],

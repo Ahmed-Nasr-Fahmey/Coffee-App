@@ -1,6 +1,7 @@
+import 'package:coffee_app/Core/Shared/widgets/bottom_navigation_bar.dart';
 import 'package:coffee_app/Features/Cart/cart_view.dart';
-import 'package:coffee_app/Features/ContactUs/contact_us.dart';
 import 'package:coffee_app/Features/ColdCoffeeDrinks/cold_coffee_drinks_view.dart';
+import 'package:coffee_app/Features/ContactUs/contact_us.dart';
 import 'package:coffee_app/Features/Home/home_view.dart';
 import 'package:coffee_app/Features/HotCoffeeDrinks/hot_coffee_drinks_view.dart';
 import 'package:coffee_app/Features/IceCreamCoffeeDrinks/ice_cream_coffee_drinks_view.dart';
@@ -98,6 +99,11 @@ class Routes {
       case ProfileView.routeName:
         return MaterialPageRoute(
           builder: (context) => const ProfileView(),
+          settings: settings,
+        );
+        case CustomBottomNavigationBar.routeName:
+        return MaterialPageRoute(
+          builder: (context) => const CustomBottomNavigationBar(),
           settings: settings,
         );
       default:
