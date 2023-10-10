@@ -11,17 +11,17 @@ class CustomCategoriesProductCardBuilder extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 24),
+      padding: const EdgeInsets.symmetric(horizontal: 20),
       child: SizedBox(
         height: MediaQuery.of(context).size.height - 100,
         child: GridView.builder(
           itemCount: productsList.length,
           physics: const BouncingScrollPhysics(),
-          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisCount: 2,
             childAspectRatio: 0.641,
-            crossAxisSpacing: 20,
-            mainAxisSpacing: 32,
+            crossAxisSpacing: MediaQuery.of(context).size.width * 0.03,
+            mainAxisSpacing: MediaQuery.of(context).size.height * 0.03,
           ),
           itemBuilder: (context, index) {
             return CustomCategoriesProductCard(
