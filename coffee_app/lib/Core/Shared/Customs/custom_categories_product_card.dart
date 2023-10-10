@@ -33,6 +33,7 @@ class CustomCategoriesProductCard extends StatelessWidget {
                 children: [
                   Container(
                     width: double.infinity,
+                    height: 120,
                     decoration: ShapeDecoration(
                       image: DecorationImage(
                         image: NetworkImage(

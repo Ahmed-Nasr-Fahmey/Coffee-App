@@ -30,7 +30,7 @@ class _CustomBottomNavigationBarState extends State<CustomBottomNavigationBar> {
       body: _widgetOptions.elementAt(_selectedIndex),
       bottomNavigationBar: GNav(
         tabMargin: const EdgeInsets.only(bottom: 8, top: 8, left: 4, right: 4),
-        color: ConstColors.greyColor,
+        color: const Color.fromARGB(255, 220, 222, 228),
         activeColor: ConstColors.primaryColor,
         gap: 6,
         backgroundColor: ConstColors.primaryColor,
